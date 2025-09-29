@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BMW i8 — Innovation in Motion</title>
+  <meta name="description" content="BMW i8 — Overview, features, models and pricing.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#">BMW <span class="muted">i8</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><button id="inquireBtn" class="btn btn-ghost">Inquire</button></li>
+      </ul>
+      <button id="navToggle" class="hamburger" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>BMW i8</h1>
+          <p class="lead">The future of driving, today. Plug-in hybrid performance wrapped in an iconic design.</p>
+          <div class="hero-cta">
+            <a href="#models" class="btn btn-primary">Explore Models</a>
+            <a href="#features" class="btn btn-outline">See Features</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iDKbTZKuItWE/v1/-1x-1.webp" alt="BMW i8" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="container section">
+      <h2>Overview</h2>
+      <p class="card">
+        The BMW i8 is a revolutionary plug-in hybrid sports car that combines futuristic styling with sustainable performance.
+        It pairs a 1.5-litre turbo petrol engine with an electric motor to deliver instant torque and thrilling acceleration,
+        while lightweight carbon fiber construction and aerodynamic design keep handling razor-sharp. Iconic scissor-style doors,
+        premium interiors and advanced infotainment make the i8 both a head-turner and a technological statement.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container section">
+      <h2>Features</h2>
+      <div class="grid-3">
+        <article class="feature-card">
+          <h3>Hybrid Powertrain</h3>
+          <p>1.5L turbo petrol + electric motor delivering strong combined output, instant torque and improved efficiency.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Performance</h3>
+          <p>0–100 km/h in ~4.4s (dependent on variant), top speeds electronically limited; agile chassis and low centre of gravity.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Lightweight Tech</h3>
+          <p>Carbon-Fiber Reinforced Plastic (CFRP) and aluminium construction for superior stiffness and reduced mass.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Electric Range</h3>
+          <p>Pure electric driving range for city trips (around 25–35 km in real-world usage depending on conditions).</p>
+        </article>
+        <article class="feature-card">
+          <h3>Design & Comfort</h3>
+          <p>Futuristic cabin, driver-focused infotainment, climate control, premium materials and iconic butterfly doors.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Safety</h3>
+          <p>Multiple airbags, stability & traction control systems, advanced driver aids and reinforced occupant cell.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Models -->
+    <section id="models" class="container section">
+      <h2>Models</h2>
+      <div class="models-intro card">
+        <p>The BMW i8 was offered primarily in two versions: the <strong>i8 Coupe</strong> and the <strong>i8 Roadster</strong>.
+           Both share the same hybrid drivetrain but offer distinct experiences — the Coupe for pure sporty dynamics and the Roadster
+           for an open-top driving experience. Below you can switch between models to see quick highlights.</p>
+      </div>
+
+      <div class="model-tabs">
+        <div class="tabs">
+          <button class="tab active" data-model="coupe">i8 Coupe</button>
+          <button class="tab" data-model="roadster">i8 Roadster</button>
+          <button class="tab" data-model="special">Special / LCI</button>
+        </div>
+
+        <div class="tab-panels">
+          <div class="panel active" id="coupe">
+            <div class="panel-grid">
+              <div>
+                <img src="https://i.ytimg.com/vi/5Mx2Th36dwY/maxresdefault.jpg" alt="i8 Coupe"  class="car-img">
+              </div>
+              <div>
+                <h3>i8 Coupe</h3>
+                <ul>
+                  <li>Fixed-roof two-seater sports coupe.</li>
+                  <li>Sharper visual lines and lower center of gravity.</li>
+                  <li>Sport-focused suspension tuning and slightly lighter kerb weight.</li>
+                </ul>
+                <a class="btn btn-secondary" href="#price" onclick="selectModel('Coupe')">See Price</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="roadster">
+            <div class="panel-grid">
+              <div>
+                <img src="https://spots.ag/2020/05/29/bmw-i8-roadster-c101129052020201816_1.jpg" alt="i8 Roadster"  class="car-img">
+              </div>
+              <div>
+                <h3>i8 Roadster</h3>
+                <ul>
+                  <li>Open-top convertible model with reinforced chassis for torsional stiffness.</li>
+                  <li>Nearly identical powertrain performance, slightly higher weight.</li>
+                  <li>Ultimate open-air driving experience with luxury touches.</li>
+                </ul>
+                <a class="btn btn-secondary" href="#price" onclick="selectModel('Roadster')">See Price</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="special">
+            <div class="panel-grid">
+              <div>
+                <img src="https://www.carscoops.com/wp-content/uploads/2019/09/14c85605-bmw-i8-ultimate-sophisto-edition-at-2019-frankfurt-motor-show-0.jpg" alt="i8 Special"  class="car-img">
+              </div>
+              <div>
+                <h3>Special / LCI</h3>
+                <p>Facelift (LCI) and special editions brought small styling updates, battery tweaks and interior refinements.</p>
+                <a class="btn btn-secondary" href="#price" onclick="selectModel('Special')">See Price</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price -->
+    <section id="price" class="container section">
+      <h2>Price</h2>
+      <div class="price-card card">
+        <div class="price-top">
+          <div>
+            <p class="muted">Selected model</p>
+            <h3 id="selectedModel">i8 Coupe</h3>
+          </div>
+          <div class="currency-switch">
+            <label for="currency">Currency</label>
+            <select id="currency" aria-label="Select currency">
+              <option value="INR">INR (₹)</option>
+              <option value="USD">USD ($)</option>
+              <option value="EUR">EUR (€)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="price-body">
+          <p class="muted">Indicative / historic pricing (ex-showroom) — actual prices vary by country, taxes & availability.</p>
+          <div class="price-values">
+            <div>
+              <span class="muted">MSRP</span>
+              <div class="price-value" id="msrp">₹ 2.29 Cr</div>
+            </div>
+            <div>
+              <span class="muted">Typical market range (used / import)</span>
+              <div class="price-value small" id="range">₹ 1.8 Cr — ₹ 3.2 Cr</div>
+            </div>
+          </div>
+          <p class="note">Note: BMW stopped i8 production in later years; new units are rare — most available cars are pre-owned or limited imports.</p>
+        </div>
+      </div>
+    </section>
+    <section id="audio" class="container section audio-section">
+  <h2>BMW i8 Audio System</h2>
+  <p>
+    The BMW i8 comes equipped with a premium <strong>Harman Kardon® Surround Sound System</strong>,
+    delivering crystal clear sound through <strong>11 strategically placed speakers</strong>
+    and a powerful <strong>360-watt amplifier</strong>.
+  </p>
+
+  <ul class="audio-features">
+    <li>11-Speaker Surround Setup</li>
+    <li>360-Watt Harman Kardon Amplifier</li>
+    <li>HD Radio & Voice Activation</li>
+    <li>Integrated with Navigation & Infotainment</li>
+    <li>Optional Upgrade: Bavsound Stage One Kit</li>
+  </ul>
+
+  <div class="audio-demo">
+    <p><strong>Listen to the BMW i8 Engine & Sound Experience:</strong></p>
+    <audio controls>
+      <source src="c:\Users\hp\Downloads\bmw-i8-noise-252644 (2).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</section>
+    
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>BMW i8</strong>
+          <p class="muted">Iconic hybrid performance & future-forward design.</p>
+        </div>
+        <div>
+          <nav>
+            <a href="#overview">Overview</a> · <a href="#features">Features</a> · <a href="#models">Models</a>
+          </nav>
+        </div>
+        <div>
+          <p class="muted">© <span id="year"></span> BMW i8 — demo site</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal: Inquire -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close">✕</button>
+      <h3 id="modalTitle">Enquire about the BMW i8</h3>
+      <form id="inquiryForm">
+        <label for="name">Name</label>
+        <input id="name" required placeholder="Your name" />
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="you@example.com" />
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="I'm interested in..."></textarea>
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="button" id="cancelModal" class="btn btn-ghost">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
